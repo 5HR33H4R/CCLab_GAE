@@ -1,0 +1,42 @@
+body {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    padding-top: 20px;
+  }
+
+table {
+    width: 90%;
+    size: 500px;
+    margin: auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    font-style: italic;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-size: large;
+  }
+  
+  th {
+    font-style: italic;
+    background-color: #f2f2f2;
+    font-size: x-large;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dbd363;
+  }
+  
