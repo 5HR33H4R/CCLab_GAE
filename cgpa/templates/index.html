@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CGPA Calculator</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <form action="cgpa" method="post">
+      <h1>CGPA Calculator</h1>
+      {% for message in get_flashed_messages()%}
+      <h2>{{message}}</h2>
+      {% endfor %}
+      <br />
+      <h3>Enter your GPA for Sem 1</h3>
+      <input placeholder="GPA (1-10)" type="text" name="sem1_gpa" />
+      <h3>Enter the credits for Sem 1</h3>
+      <input placeholder="Credits" type="text" name="sem1_credits" />
+      <br />
+      <br />
+      <h3>Enter your GPA for Sem 2</h3>
+      <input placeholder="GPA (1-10)" type="text" name="sem2_gpa" />
+      <h3>Enter the credits for Sem 2</h3>
+      <input placeholder="Credits" type="text" name="sem2_credits" />
+      <br />
+      <br />
+      <h3>Enter your GPA for Sem 3</h3>
+      <input placeholder="GPA (1-10)" type="text" name="sem3_gpa" />
+      <h3>Enter the credits for Sem 3</h3>
+      <input placeholder="Credits" type="text" name="sem3_credits" />
+      <br />
+      <br />
+      <h3>Enter your GPA for Sem 4</h3>
+      <input placeholder="GPA (1-10)" type="text" name="sem4_gpa" />
+      <h3>Enter the credits for Sem 4</h3>
+      <input placeholder="Credits" type="text" name="sem4_credits" />
+      <br />
+      <br />
+      <h3>Enter your GPA for Sem 5</h3>
+      <input placeholder="GPA (1-10)" type="text" name="sem5_gpa" />
+      <h3>Enter the credits for Sem 5</h3>
+      <input placeholder="Credits" type="text" name="sem5_credits" />
+      <br />
+      <br />
+      <h3>Enter your GPA for Sem 6</h3>
+      <input placeholder="GPA (1-10)" type="text" name="sem6_gpa" />
+      <h3>Enter the credits for Sem 6</h3>
+      <input placeholder="Credits" type="text" name="sem6_credits" />
+      <br />
+      <br />
+      <h3>Enter your GPA for Sem 7</h3>
+      <input placeholder="GPA (1-10)" type="text" name="sem7_gpa" />
+      <h3>Enter the credits for Sem 7</h3>
+      <input placeholder="Credits" type="text" name="sem7_credits" />
+      <br />
+      <br />
+      <h3>Enter your GPA for Sem 8</h3>
+      <input placeholder="GPA (1-10)" type="text" name="sem8_gpa" />
+      <h3>Enter the credits for Sem 8</h3>
+      <input placeholder="Credits" type="text" name="sem8_credits" />
+      <br />
+      <br />
+      <input type="submit" value="Convert" id="btn" />
+    </form>
+  </body>
+</html>
