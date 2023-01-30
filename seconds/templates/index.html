@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seconds Converter</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <form action="seconds" method="post">
+      <h1>Seconds Converter</h1>
+      <br />
+      {% for message in get_flashed_messages()%}
+      <h2>{{message}}</h2>
+      {% endfor %}
+      <br />
+      <input placeholder="Hours" type="text" name="h_input" />
+      <br />
+      <input placeholder="Minutes" type="text" name="m_input" />
+      <br />
+      <input type="submit" value="Convert" id="btn" />
+    </form>
+  </body>
+</html>
