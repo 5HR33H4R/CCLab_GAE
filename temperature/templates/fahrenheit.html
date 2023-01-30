@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Temperature Converter</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <form action="calcCelcius" method="post">
+      <h1>Fahrenheit to Celcius Converter</h1>
+      {% for message in get_flashed_messages()%}
+      <h2>{{message}}</h2>
+      {% endfor %}
+      <br />
+      <input type="text" name="f_input" />
+      <br />
+      <input type="submit" value="Convert" id="btn" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Temperature Converter</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Temperature Converter</h1>
+      <form>
+        <h2>Choose the conversion methods</h2>
+        <br />
+        <a href="/fahrenheit"
+          ><input type="button" value="Fahrenheit to Celcius" id="btn"
+        /></a>
+        <a href="/celcius"
+          ><input type="button" value="Celcius to Fahrenheit" id="btn"
+        /></a>
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
