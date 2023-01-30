@@ -4,17 +4,6 @@ app = Flask(__name__)
 app.secret_key = "***"
 
 
-def rv(s):
-    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-    result = ""
-
-    for i in range(len(s)):
-        if s[i] not in vowels:
-            result = result + s[i]
-    print(result)
-    return (result)
-
-
 @app.route("/")
 def index():
     flash("Enter the values", "")
