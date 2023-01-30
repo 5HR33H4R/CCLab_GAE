@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Even Number Generator</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <form action="even" method="post">
+      <h1>Even Number Generator</h1>
+      <br />
+      {% for message in get_flashed_messages()%}
+      <h2>{{message}}</h2>
+      {% endfor %}
+      <br />
+      <input type="text" name="input" />
+      <br />
+      <input type="submit" value="Generate" id="btn" />
+    </form>
+    <textarea rows="10" cols="100" name="output">{{result}}</textarea>
+  </body>
+</html>
